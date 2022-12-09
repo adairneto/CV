@@ -1,0 +1,151 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (September 10, 2021)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Stefano (https://www.kindoblue.nl)
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
+
+\usepackage{scrlayer-scrpage} % Provides headers and footers configuration
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{ebgaramond} % Use the EB Garamond font
+\usepackage{microtype} % To enable letterspacing
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+
+\pagestyle{scrheadings} % Print the headers and footers on all pages
+
+\addtolength{\voffset}{-0.5in} % Adjust the vertical offset - less whitespace at the top of the page
+\addtolength{\textheight}{3cm} % Adjust the text height - less whitespace at the bottom of the page
+
+\newcommand{\gray}{\rowcolor[gray]{.90}} % Custom highlighting for the work experience and education sections
+
+%----------------------------------------------------------------------------------------
+%	FOOTER SECTION
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
+
+\cofoot{
+\fontsize{12.5}{17}\selectfont % Letter spacing and font size
+
+\textls[150]{Campinas {\large\textperiodcentered} São Paulo {\large\textperiodcentered} Brazil}\\ % Your mailing address
+{\Large\Letter} \textls[150]{\href{mailto:adair@riseup.net}{adair [at] riseup [dot] net} \ {\Large\Info} \href{https://adairneto.github.io/}{adairneto.github.io}} % Your email address and phone number
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{center} % Center everything in the document
+
+%----------------------------------------------------------------------------------------
+%	HEADER SECTION
+%----------------------------------------------------------------------------------------
+
+{\fontsize{28}{28}\selectfont\scshape\textls[200]{Adair Antonio da Silva Neto}} % Your name at the top
+
+\vspace{1.5cm} % Extra whitespace after the large name at the top
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+\section{Objective}
+
+Research in Stochastic Analysis and its applications in Finance and Economic Theory.
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{July 2022 --- July 2023}\\
+\gray Employer & \textbf{São Paulo Research Foundation, FAPESP} \hfill Campinas, Brazil\\
+\gray Job Title & \textbf{Undergraduate Researcher}\\
+       & Research Title: An Introduction to Stochastic Differential Equations
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{September 2015 --- August 2021}\\
+\gray Employer & \textbf{Municipal Foundation for Community Education} \hfill Campinas, Brazil\\
+\gray Job Title & \textbf{Administrative Agent}\\
+       & Data analysis with Excel and Python/Pandas \\
+       & Quantitative reports for accountability
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{August 2021 --- December 2021}\\
+\gray Employer & \textbf{State University of Campinas} \hfill Campinas, Brazil\\
+\gray Job Title & \textbf{Undergraduate Teaching Assistant: Linear Algebra}\\
+       & Explaining concepts resulted in a \href{https://raw.githubusercontent.com/adairneto/Algebra-Linear/main/algelin-resumo.pdf}{37-pages text (in Portuguese)}. \\
+       & Solved \href{https://github.com/adairneto/Algebra-Linear}{problems from the textbook}.
+
+\end{tabularx}
+
+%        & Helped students learn Linear Algebra. \\ & Explaining concepts resulted in a \href{https://raw.githubusercontent.com/adairneto/Algebra-Linear/main/algelin-resumo.pdf}{37-pages text (in Portuguese)}. \\ & Also \href{https://github.com/adairneto/Algebra-Linear/tree/main/Exerc%C3%ADcios%20Resolvidos}{Solved problems from the textbook}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{March 2020 --- December 2024 (Expected)}\\
+\gray Degree & \textbf{Bachelor of Science in Mathematics}\\
+% \gray Rank & \textbf{First Class Honours}\\
+\gray University & \textbf{State University of Campinas (UNICAMP)} \hfill Campinas, Brazil\\
+    & UNICAMP is often considered one of the best universities in Latin America.
+\end{tabularx}
+
+\vspace{12pt}
+
+% \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+% \gray Period & \textbf{August 2008 --- September 2010}\\
+% \gray Degree & \textbf{Bachelor of Science in Computer Science}\\
+% \gray Rank & \textbf{With Distinction}\\
+% \gray University & \textbf{New York University} \hfill New York, USA\\
+% %& Extra information about degree
+% \end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Computer Languages & Python, MatLab, R, C/C++, Clojure \\
+Libraries & Pandas, MatPlotLib, Numpy, Scikit-learn \\
+Databases & PostgreSQL \\
+Tools & GIT, Vim, Emacs, \LaTeX, Microsoft Excel \\
+Languages & Portuguese (native), English (fluent) \\
+Other & Program Design, Analytical Reasoning
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+\end{center}
+
+\end{document}
